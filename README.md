@@ -32,6 +32,4 @@ This project implements various operations on binary trees, including:
 
 3. networkx
 
-<ins> Installation </ins>
-
 # Usage 
