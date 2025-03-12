@@ -18,4 +18,20 @@ This project implements various operations on binary trees, including:
 
 4. Comparing time and space complexity of recursive and iterative in-order traversal.
 
-5. Validating
+5. Validating if a binary tree is a Binary Search Tree (BST).
+
+6. Printing the tree structure in a readable format (both ASCII and graphical representation).
+
+# Installation and Requirements
+
+<ins> Prerequisites </ins>
+
+1. Python 3.6+
+
+2. matplotlib
+
+3. networkx
+
+<ins> Installation </ins>
+
+# Usage 
