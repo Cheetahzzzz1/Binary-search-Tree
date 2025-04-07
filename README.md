@@ -33,3 +33,5 @@ This project implements various operations on binary trees, including:
 3. networkx
 
 # Usage 
+
+<ins> Constructing a Binary Tree </ins>
