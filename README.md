@@ -67,3 +67,42 @@ Graphical Representation (using matplotlib & networkx)
       visualize_tree_hierarchical(root)
 
 # Performance Analysis
+
+The project compares the time and space complexity of in-order traversal (recursive vs iterative) on both complete and skewed binary trees.
+
+<ins>Performance Testing</ins>
+
+       sizes = [10, 100, 1000, 5000]
+       trials = 100
+       for N in sizes:
+           nums = homework3.generate_random_permutation(N)
+           complete_tree = homework3.generate_complete_tree(nums)
+           skewed_tree = homework3.generate_skewed_tree(nums)
+
+           analyze_performance(complete_tree, skewed_tree)
+
+# Handling Common Issues</ins>
+
+<ins> Encoding Error</ins>
+
+The 'charmap' can't encode character. If we encounter this error while printing tree structures try :
+
+1. Forcing UTF-8 encoding in Python:
+
+         import sys
+         sys.stdout.reconfigure(encoding='utf-8')
+
+2. Using ASCII-only tree characters instead:
+
+         print_tree_ascii(root, use_unicode=False)
+
+<ins> Large Input Causing RecursionError</ins>
+
+For large skewed trees, recursion may hit Python's depth limit. To avoid this :
+
+1. Use the iterative traversal method instead.
+
+2. Increase the recursion limit(use with coutin though):
+
+          import sys
+          sys.setrecursionlimit(10000)
